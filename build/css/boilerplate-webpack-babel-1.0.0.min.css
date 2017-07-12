@@ -1,0 +1,44 @@
+/*
+ * Plain CSS files are supported
+ */
+.border {
+  border: 1px solid black; }
+/*
+ * .less files are also supported
+ */
+#contents {
+  font-weight: bold;
+  font-family: monospace; }
+/* Plain .css files are supported */
+/* .less files are also supported */
+/*
+ * But usually, it's a good idea to use .scss files to generate CSS styles
+ */
+* {
+  color: #00f; }
+
+/* The animation code */
+@-webkit-keyframes redtransition {
+  0% {
+    color: blue; }
+  100% {
+    color: red; } }
+
+@keyframes redtransition {
+  0% {
+    color: blue; }
+  100% {
+    color: red; } }
+
+/* The element to apply the animation to */
+.red {
+  -webkit-animation-name: redtransition;
+  animation-name: redtransition;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+/*# sourceMappingURL=boilerplate-webpack-babel-1.0.0.min.css.map*/

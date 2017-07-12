@@ -1,0 +1,23 @@
+@import url('./styles.css');  /* Plain .css files are supported */
+@import url('./styles.less'); /* .less files are also supported */
+
+/*
+ * But usually, it's a good idea to use .scss files to generate CSS styles
+ */
+* {
+  color: #00f;
+}
+
+/* The animation code */
+@keyframes redtransition {
+  0%   { color: blue;}
+  100% { color: red;}
+}
+
+/* The element to apply the animation to */
+.red {
+  animation-name: redtransition;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
